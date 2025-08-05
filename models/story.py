@@ -1,15 +1,8 @@
-# story name
-# theme
-# first option
-# children [go left, go right]
-# text
-# option
-
-from sqlalchemy import Column, Integer, String, DateTime, Boolean, ForeignKey, JSON
-from sqlalchemy .sql import func
+from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, Boolean, JSON
+from sqlalchemy.sql import func
+from db.database import Base
 from sqlalchemy.orm import relationship
 
-from Backend.db.database import Base
 class Story(Base):
     __tablename__ = "stories"
 
