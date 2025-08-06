@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List
 from pydantic_settings import BaseSettings
 from pydantic import field_validator
 import os
@@ -11,7 +11,7 @@ class Settings(BaseSettings):
 
     ALLOWED_ORIGINS: str = ""
 
-    OPENAI_API_KEY: Optional[str] = None
+    OPENAI_API_KEY: str
 
     def __init__(self, **values):
         super().__init__(**values)

@@ -8,7 +8,7 @@ class StoryOptionSchemas(BaseModel):
 
 class StoryNodeBase(BaseModel):
     content: str
-    is_ending: bool
+    is_ending: bool = False
     is_winning_ending: bool = False
 
 class CompleteStoryNodeResponse(StoryNodeBase):
